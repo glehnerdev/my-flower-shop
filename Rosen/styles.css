@@ -1,0 +1,146 @@
+/* =========================
+   1) RESET / BASE
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* =========================
+   2) ELEMENTE (global)
+========================= */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* =========================
+   3) KOMPONENTEN
+========================= */
+
+/* NAV */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 4px 6px;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: lightgray;
+}
+
+/* BLUMEN-LISTE */
+.blumen-liste {
+  padding-left: 20px;
+}
+
+.blumen-liste li {
+  margin-bottom: 4px;
+}
+
+.blumen-liste a {
+  display: inline-block;
+  padding: 2px 6px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.blumen-liste a:hover {
+  background: lightskyblue;
+  padding: 4px 12px; /* Achtung: das erzeugt "springen" – siehe Hinweis unten */
+}
+
+/* BESTELL-BUTTON (Produktseiten) */
+.bestell-button {
+  display: inline-block;
+  padding: 10px 14px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.bestell-button:hover {
+  background: lightcoral;
+}
+
+/* MAIN BUTTON (Startseite) */
+.main-button-parent {
+  text-align: center; /* Parent zentriert den inline-block */
+}
+
+.main-button {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: large;
+  font-weight: 600;
+
+  border-radius: 8px;
+  text-decoration: none;
+  color: brown;
+
+  transition: 0.2s;
+}
+
+.main-button:hover {
+  background: lightcoral;
+  text-decoration: underline;
+  transform: scale(1.15);
+}
+
+/* FOOTER */
+.side-footer {
+  text-align: center;
+}
+
+.side-footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: brown;
+
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.side-footer a:hover {
+  background: lightpink;
+}
+
+/* =========================
+   4) PAGE-SPECIFIC
+========================= */
+.impressum-h1 {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.impressum {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 20px;
+}
+
+.main-img {
+  display: block;
+  margin: 0 auto;
+}
