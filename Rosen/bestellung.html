@@ -9,43 +9,47 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
+		
 		<nav>
 			<h3><a href="index.html">Startseite</a></h3>
 			<a href="Rosen.html">Rosen</a>
 			<a href="Lilien.html">Lilien</a>
 			<a href="Orchideen.html">Orchideen</a>
 		</nav>
-		<main>
-			<h1>Daten für die Bestellung:</h1>
-			<form action="danke.html" method="get">
-			<label for="name">Name:</label>
-			<br>
-			<input id="name" name="name" type="text" required>
-			<br>
-			<label for="email">E-Mail:</label>
-			<br>
-			<input id="email" name="email" type="email" required>
-			<br>
-			<label for="nachricht">Nachricht:</label>
-			<br>
-			<textarea id="nachricht" name="nachricht"></textarea>
-			<br>
-			<label for="produkt">Produkt:</label>
-			<br>
-			<select id="produkt" name="produkt" required>
-			<option value="">Bitte wählen...</option>
-			<option value="rose">Rose</option>
-			<option value="lilie">Lilie</option>
-			<option value="orchidee">Orchidee</option>
-			</select>
-			<br>
-			<br>
-			<label for="menge">Menge:</label>
-			<br>
-			<input id="menge" name="menge" type="number" min="1" max="20" value="1">
-			<br>
-			<br>	
-			<button type="submit">Bestellung senden</button>
+	
+		<main>	
+			<div class="bestell-datenbox">
+				<h1>Daten für die Bestellung:</h1>
+				<form action="danke.html" method="get">
+				<label for="name">Name:</label>
+				<br>
+				<input id="name" name="name" type="text" required>
+				<br>
+				<label for="email">E-Mail:</label>
+				<br>
+				<input id="email" name="email" type="email" required>
+				<br>
+				<label for="nachricht">Nachricht:</label>
+				<br>
+				<textarea id="nachricht" name="nachricht"></textarea>
+				<br>
+				<label for="produkt">Produkt:</label>
+				<br>
+				<select id="produkt" name="produkt" required>
+				<option value="">Bitte wählen...</option>
+				<option value="rose">Rose</option>
+				<option value="lilie">Lilie</option>
+				<option value="orchidee">Orchidee</option>
+				</select>
+				<br>
+				<br>
+				<label for="menge">Menge:</label>
+				<br>
+				<input id="menge" name="menge" type="number" min="1" max="20" value="1">
+				<br>
+				<br>	
+				<button type="submit">Bestellung senden</button>
+			</div>
 		</main>
 	</body>
 </html>

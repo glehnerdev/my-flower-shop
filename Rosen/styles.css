@@ -1,3 +1,65 @@
+/* ============================================
+   Klassen-Übersicht / INHALTSVERZEICHNIS:
+============================================ */
+
+
+/* =========================
+   Startseite Classes:
+========================= */
+.blumen-liste
+.rosen-link
+.lilien-link
+.orchideen-link
+.veilchen-link
+.main-button-parent
+.main-button
+.side-footer
+.google-link
+
+/* =========================
+   Rosen-Seite Classes:
+========================= */
+
+
+/* =========================
+   Veilchen-Seite Classes:
+========================= */
+
+
+/* =========================
+   Orchideen-Seite Classes:
+========================= */
+
+
+/* =========================
+   Lilien-Seite Classes:
+========================= */
+
+/* =========================
+   Bestellseite Classes:
+========================= */
+.bestell-datenbox
+
+/* =========================
+   Impressum-Seite Classes:
+========================= */
+.impressum
+.impressum-h1
+
+/* =========================
+   Global Classes:
+========================= */
+.main-img
+.bestell-button
+.navigation
+
+
+
+/* ==============================
+   Hauptteil / CSS - STRUKTUR
+============================== */
+
+
 /* =========================
    1) RESET / BASE
 ========================= */
@@ -11,7 +73,7 @@ body {
 }
 
 /* =========================
-   2) ELEMENTE (global)
+   2) ELEMENTE (Global)
 ========================= */
 h1 {
   text-align: center;
@@ -24,11 +86,12 @@ img {
   border-radius: 10px;
 }
 
-/* =========================
-   3) KOMPONENTEN
-========================= */
+.main-img {
+  display: block;
+  margin: 0 auto;
+}
 
-/* NAV */
+/* Navigation Global */
 nav ul {
   list-style: none;
   margin: 0;
@@ -51,7 +114,25 @@ nav a:hover {
   background: lightgray;
 }
 
-/* BLUMEN-LISTE */
+/* BESTELL-BUTTON (Produktseiten) */
+.bestell-button {
+  display: inline-block;
+  padding: 10px 14px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+
+.bestell-button:hover {
+  background: lightcoral;
+}
+
+
+/* =========================
+   3) ELEMENTE Startseite
+========================= */
+
 .blumen-liste {
   padding-left: 20px;
 }
@@ -69,25 +150,12 @@ nav a:hover {
 
 .blumen-liste a:hover {
   background: lightskyblue;
-  padding: 4px 12px; /* Achtung: das erzeugt "springen" – siehe Hinweis unten */
-}
-
-/* BESTELL-BUTTON (Produktseiten) */
-.bestell-button {
-  display: inline-block;
-  padding: 10px 14px;
-  text-decoration: none;
-  border: 2px solid black;
-  border-radius: 8px;
-}
-
-.bestell-button:hover {
-  background: lightcoral;
+  padding: 4px 12px; 
 }
 
 /* MAIN BUTTON (Startseite) */
 .main-button-parent {
-  text-align: center; /* Parent zentriert den inline-block */
+  text-align: center; 
 }
 
 .main-button {
@@ -127,9 +195,11 @@ nav a:hover {
   background: lightpink;
 }
 
+
 /* =========================
-   4) PAGE-SPECIFIC
+   4) KOMPONENTEN Seite Impressum
 ========================= */
+
 .impressum-h1 {
   text-align: left;
   margin-top: 30px;
@@ -140,7 +210,12 @@ nav a:hover {
   margin-left: 20px;
 }
 
-.main-img {
-  display: block;
-  margin: 0 auto;
-}
+/* =========================
+   5) KOMPONENTEN Seite Bestellung
+========================= */
+
+
+/* =========================
+   6) PAGE-SPECIFIC
+========================= */
+
