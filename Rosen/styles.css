@@ -52,7 +52,7 @@
 .main-img
 .bestell-button
 .navigation
-
+.sozial-nav
 
 
 /* ==============================
@@ -126,6 +126,52 @@ nav a:hover {
 
 .bestell-button:hover {
   background: lightcoral;
+}
+
+/* Navigationsleiste Global */
+
+.social-nav img {
+  width: 16px;
+  height: auto;
+}
+
+.social-nav {
+  background: #6dbb2f;
+  padding: 8px 0;
+}
+
+.social-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+
+}
+
+.social-nav {
+  border: 2px solid rgb(2, 84, 75);
+  border-radius: 8px;
+}
+
+.social-nav ul a {
+  display: inline-block;
+  padding: auto;
+  font-size: small;
+  font-weight: 600;
+
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgb(5, 107, 104);
+
+  transition: 0.2s;
+}
+
+.social-nav ul a:hover {
+text-decoration: none;
+transform: scale(1.25)
 }
 
 
