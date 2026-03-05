@@ -41,6 +41,9 @@
 .bestell-datenbox
 .nav-start
 .nav-center
+.hero
+.hero-content
+.bestellseite-footer
 /* =========================
    Impressum-Seite Classes:
 ========================= */
@@ -137,25 +140,10 @@ nav a:hover {
   height: auto;
 }
 
-.social-nav {
-  background: #6dbb2f;
-  padding: 8px 0;
-}
-
 .social-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-
-}
-
-.social-nav {
-  border: 2px solid rgb(2, 84, 75);
-  border-radius: 8px;
 }
 
 .social-nav ul a {
@@ -163,6 +151,8 @@ nav a:hover {
   padding: auto;
   font-size: small;
   font-weight: 600;
+
+  background-color: lightcyan;
 
   border-radius: 8px;
   text-decoration: none;
@@ -175,6 +165,31 @@ nav a:hover {
 text-decoration: none;
 transform: scale(1.25)
 }
+
+/* Navigationsleiste Bestell-Seite */
+
+.social-nav{
+  position: relative;
+  background-color: #7EC64A;
+  padding: 8px;
+  border: 2px solid rgb(163, 159, 159);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.nav-center{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.nav-start{
+  position: absolute;
+  left: 0;
+  margin-left: 6px;
+}
+
+
 
 
 /* =========================
@@ -261,26 +276,54 @@ transform: scale(1.25)
 /* =========================
    5) KOMPONENTEN Seite Bestellung
 ========================= */
-.bestell-datenbox {
-  background: rgb(226, 137, 137);
-  border: 4px solid red;
+.hero-content {
+  background-color: bisque;
+  border: 4px solid lightpink;
   outline: 4px dashed orange;
   }
 
-.bestell-datenbox {
+.hero-content {
   max-width: 600px;
   margin: 40px auto;
   padding: 40px
 }
 
-.nav-start {
+.hero {
 
-display: inline-block;
-background-color: aqua;
-padding: 6px 12px;
-margin-left: 10px;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
 
+  height: 800px;
+  background-image: url(Bilder/blumenwiese.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30px;  
+  border-radius: 10px;
+}
+
+.bestellseite-footer {
+text-align: center;
+font-family: Georgia, serif;
+font-size: 18px;
+font-style: italic;
+
+background-color: lightcyan;
+padding: 1px;
+border: 2px solid black;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+}
+
 
 /* =========================
    6) PAGE-SPECIFIC
